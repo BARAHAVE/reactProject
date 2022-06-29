@@ -2,24 +2,22 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 const Logo = () => {
-  const textLogo = "Thai-NichiInstitute of Technology";
+  const textLogo = "Thai-Nichi";
   const isTH = true;
   return (
     <View>
-      <Text style={styles.textLogo}>TNI</Text>
+      <Text style={styles.TextLogo}>TNI</Text>
       <Text>{textLogo}</Text>
       {/* {
         isTH && <Text>ภาษาไทย</Text>
       } */}
-      
-      {/* use if/else condition operator    */}
-
+      {/* Use If/Else or Conditional Operator */}
       {
         isTH
         ?(<Text>ภาษาไทย</Text>)
+
         :(<Text>ภาษาอังกฤษ</Text>)
       }
-      
     </View>
   )
 }
@@ -27,8 +25,8 @@ const Logo = () => {
 export default Logo
 
 const styles = StyleSheet.create({
-    textLogo:{
+    TextLogo:{
         color:"red",
-        fontSize:60
+        fontSize:40,
     }
-});
+})
