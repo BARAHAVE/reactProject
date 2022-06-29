@@ -28,5 +28,5 @@ const styles = StyleSheet.create({
     TextLogo:{
         color:"red",
         fontSize:40,
-    }
-})
+    }  
+}) 
