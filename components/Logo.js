@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
 
 const Logo = () => {
   const textLogo = "Thai-Nichi";
-  const isTH = true;
+  const isTH = false;
   return (
     <View>
       <Text style={styles.TextLogo}>TNI</Text>
@@ -11,22 +11,16 @@ const Logo = () => {
       {/* {
         isTH && <Text>ภาษาไทย</Text>
       } */}
-      {/* Use If/Else or Conditional Operator */}
-      {
-        isTH
-        ?(<Text>ภาษาไทย</Text>)
-
-        :(<Text>ภาษาอังกฤษ</Text>)
-      }
+      {isTH ? <text>ภาษาไทย</text> : <Text>ภาษาอังกฤษ</Text>}
     </View>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;
 
 const styles = StyleSheet.create({
-    TextLogo:{
-        color:"red",
-        fontSize:40,
-    }  
-}) 
+  TextLogo: {
+    color: "red",
+    fontSize: 60,
+  },
+});
