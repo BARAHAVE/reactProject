@@ -7,6 +7,7 @@ import MyCustomTextWith from './components/MyCustomTextWith'
 import Count from './components/Count'
 import InputText from './components/InputText'
 import UserNamePassword from './components/UserNamePassword'
+import TextInputPractice1 from './components/TextInputPractice1'
 
 
 const App = () => {
@@ -19,7 +20,8 @@ const App = () => {
     {/*<MyCustomTextWith/>*/}
     {/*<Count/>*/}
     {/*<InputText/>*/}
-    <UserNamePassword/>
+    {/*<UserNamePassword/>*/}
+    <TextInputPractice1>
     </View>
 
   )

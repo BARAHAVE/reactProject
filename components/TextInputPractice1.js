@@ -1,7 +1,7 @@
 import { View, Text ,StyleSheet, TextInput , Button} from 'react-native'
 import React,{useState} from 'react'
 
-const UserNamePassword = () => {
+const TextInputPractice1 = () => {
 
     const [Email,setEmail] = useState('');
     const [Pass,setPass] = useState('');
@@ -25,25 +25,26 @@ const UserNamePassword = () => {
     
      <Button 
         title='Submit'
-        onPress= {(checkTextInput)}
+        onPress= { () => alert( Email +'\n'+Pass)} 
       />
     </View>
   )
 }
 
 
-export default UserNamePassword
+export default TextInputPractice1
+
 
 const styles = StyleSheet.create({
 
-    textinput: {
-        width:250,
-        height:45,
-        padding:10,
-        marginTop:20,
-        marginBottom:10,
-        backgroundColor:'#8e88'
-    }
+  textinput: {
+      width:250,
+      height:45,
+      padding:10,
+      marginTop:20,
+      marginBottom:10,
+      backgroundColor:'#8e88'
+  }
 
 
 
@@ -54,13 +55,13 @@ const styles = StyleSheet.create({
 
 
 const checkTextInput= (Name,Pass) => {
-  //Check for the Name TextInput
-  if (!textInputName.trim(Name)) {
-    alert('Please Enter Name');
-    return;
-  }
-  if (!textInputName.trim(Pass)) {
-    alert('Please Enter Pass');
-    return;
-  }
+//Check for the Name TextInput
+if (!textInputName.trim(Name)) {
+  alert('Please Enter Name');
+  return;
+}
+if (!textInputName.trim(Pass)) {
+  alert('Please Enter Pass');
+  return;
+}
 };
