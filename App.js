@@ -8,6 +8,9 @@ import Count from './components/Count'
 import InputText from './components/InputText'
 import UserNamePassword from './components/UserNamePassword'
 import TextInputPractice1 from './components/TextInputPractice1'
+import AlertComponet from './components/AlertComponent'
+import ButtonExample from './components/ButtonExample'
+import ImageWithTextInput from './components/ImageWithTextInput'
 
 
 const App = () => {
@@ -21,7 +24,10 @@ const App = () => {
     {/*<Count/>*/}
     {/*<InputText/>*/}
     {/*<UserNamePassword/>*/}
-    <TextInputPractice1>
+    {/*<TextInputPractice1/>*/}
+    {/*<AlertComponet/>*/}
+    {/*<ImageWithTextInput/>*/}
+    {<ButtonExample/>}
     </View>
 
   )

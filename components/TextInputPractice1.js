@@ -1,67 +1,77 @@
-import { View, Text ,StyleSheet, TextInput , Button} from 'react-native'
-import React,{useState} from 'react'
+import React, {useState} from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  Button,
+  TextInput,
+} from 'react-native';
 
 const TextInputPractice1 = () => {
-
-    const [Email,setEmail] = useState('');
-    const [Pass,setPass] = useState('');
+  const [inputName, setinputName] = useState('');
+  const [inputEmail, setinputEmail] = useState('');
+  const checkTextInput = () => {
+    if (!inputName.trim()) {
+      alert('Please Enter Name');
+      return;
+    }
+    else if (!inputEmail.trim()) {
+      alert('Please Enter Email');
+      return;
+    } else {
+      alert('Success');
+      return;
+    }
+  };
 
   return (
-    <View style={{flex:1,marginTop:20,alignItems:'center'}}>
+    <SafeAreaView style={{flex: 1}}>
+      <View style={styles.container}>
+        <View style={styles.textInputStyle}>
+          <TextInput
+            style={{flex: 1}}
+            placeholder="Enter Name"
+            underlineColorAndroid="transparent"
+            onChangeText={inputName => {
+              setinputName(inputName);
+            }}
+          />
+        </View>
+        <View style={styles.textInputStyle}>
+          <TextInput
+            style={{flex: 1}}
+            placeholder="Enter Email"
+            underlineColorAndroid="transparent"
+            onChangeText={inputEmail => {
+              setinputEmail(inputEmail);
+            }}
+          />
+        </View>
+        <View style={{marginTop: 15}}>
+          <Button 
+          title="Success" 
+          color="#666362" 
+          onPress={checkTextInput} 
+          />
+        </View>
+      </View>
+    </SafeAreaView>
+  );
+};
 
-      <TextInput
-        value={Email}
-        onChangeText = {(Email) => {setEmail(Email)}}
-        style = {styles.textinput}
-        placeholder='Email'
-      />
-
-    <TextInput
-        value={Pass}
-        onChangeText = {(Pass) => {setPass(Pass)}}
-        style = {styles.textinput}
-        placeholder='Password'
-      />
-    
-     <Button 
-        title='Submit'
-        onPress= { () => alert( Email +'\n'+Pass)} 
-      />
-    </View>
-  )
-}
-
-
-export default TextInputPractice1
-
+export default TextInputPractice1;
 
 const styles = StyleSheet.create({
-
-  textinput: {
-      width:250,
-      height:45,
-      padding:10,
-      marginTop:20,
-      marginBottom:10,
-      backgroundColor:'#8e88'
-  }
-
-
-
-})
-
-
-
-
-
-const checkTextInput= (Name,Pass) => {
-//Check for the Name TextInput
-if (!textInputName.trim(Name)) {
-  alert('Please Enter Name');
-  return;
-}
-if (!textInputName.trim(Pass)) {
-  alert('Please Enter Pass');
-  return;
-}
-};
+  container: {
+    flex: 1,
+    padding: 35,
+  },
+  textInputStyle: {
+    width: '100%',
+    height: 40,
+    paddingHorizontal: 5,
+    borderWidth: 0.5,
+    marginTop: 15,
+  },
+});
