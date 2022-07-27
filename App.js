@@ -12,7 +12,9 @@ import AlertComponet from './components/AlertComponent'
 import ButtonExample from './components/ButtonExample'
 import ImageWithTextInput from './components/ImageWithTextInput'
 import TouchablePractice from './components/TouchablePractice'
-import Tochable_Examplae from './components/Touchable_Example'
+import Tochable_Examplae from './components/Touchable_Example' 
+import DynamicStyle from './components/DynamicStyle'
+import ModalExample from './components/ModalExample'
 
 
 const App = () => {
@@ -31,7 +33,9 @@ const App = () => {
     {/*<ImageWithTextInput/>*/}
     {/*<Tochable_Examplae/>*/}
     {/*<ButtonExample/>*/}
-    {<TouchablePractice/>}
+    {/*<TouchablePractice/>*/}
+    {/*<DynamicStyle/>*/}
+    {<ModalExample/>}
     </View>
 
   )
