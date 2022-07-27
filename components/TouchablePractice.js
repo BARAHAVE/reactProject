@@ -2,7 +2,6 @@ import { StyleSheet, View, SafeAreaView, Image , TouchableOpacity,Text
 } from "react-native";
 import React from "react";
 
-//const Separator = () => <View style={styles.separator} />;
 
 
 const TouchablePractice = () => {
