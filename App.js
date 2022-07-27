@@ -11,6 +11,8 @@ import TextInputPractice1 from './components/TextInputPractice1'
 import AlertComponet from './components/AlertComponent'
 import ButtonExample from './components/ButtonExample'
 import ImageWithTextInput from './components/ImageWithTextInput'
+import TouchablePractice from './components/TouchablePractice'
+import Tochable_Examplae from './components/Touchable_Example'
 
 
 const App = () => {
@@ -27,7 +29,9 @@ const App = () => {
     {/*<TextInputPractice1/>*/}
     {/*<AlertComponet/>*/}
     {/*<ImageWithTextInput/>*/}
-    {<ButtonExample/>}
+    {/*<Tochable_Examplae/>*/}
+    {/*<ButtonExample/>*/}
+    {<TouchablePractice/>}
     </View>
 
   )
