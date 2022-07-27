@@ -15,6 +15,7 @@ import TouchablePractice from './components/TouchablePractice'
 import Tochable_Examplae from './components/Touchable_Example' 
 import DynamicStyle from './components/DynamicStyle'
 import ModalExample from './components/ModalExample'
+import ModalPractice from './components/ModalPractice'
 
 
 const App = () => {
@@ -35,7 +36,8 @@ const App = () => {
     {/*<ButtonExample/>*/}
     {/*<TouchablePractice/>*/}
     {/*<DynamicStyle/>*/}
-    {<ModalExample/>}
+    {/*<ModalExample/>*/}
+    {<ModalPractice/>}
     </View>
 
   )
